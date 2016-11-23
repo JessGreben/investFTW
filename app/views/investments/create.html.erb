@@ -1,0 +1,5 @@
+<% if @investment %>
+	<p>
+		If you invest it instead of spend it, that $<%= @initInvestment %> could be worth <strong>$<%= @investment.calculateCompundInterest %></strong>!
+	</p> 
+<% end %>
