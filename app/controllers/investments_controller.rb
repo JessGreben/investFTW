@@ -1,6 +1,7 @@
 class InvestmentsController < ApplicationController
 	def new
-		uri = "https://www.quandl.com/api/v3/datasets/YAHOO/INDEX_GSPC.json?api_key=#{QUANDL_API_KEY}&start_date=2016-11-20"
+		key = ENV["QUANDL_API_KEY"]
+		uri = "https://www.quandl.com/api/v3/datasets/YAHOO/INDEX_GSPC.json?api_key=#{key}&start_date=2016-11-20"
 		response = HTTParty.get(uri, :headers =>{'Content-Type' => 'application/json'})
 		body = JSON.parse(response.body)
 		dataset = body["dataset"]
