@@ -1,24 +1,13 @@
-# README
+# investFTW
+rails investment app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps are necessary to get the application up and running:
 
-Things you may want to cover:
+For local development:
 
-* Ruby version
+bin/rail server
 
-* System dependencies
+To run tests:
 
-* Configuration
+bundle exec rspec spec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
