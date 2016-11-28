@@ -1,0 +1,2 @@
+# investFTW
+rails investment app
