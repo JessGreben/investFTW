@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Company.create(name: "S&P 500", symbol: "SPX")
+
+stockTradingActivity = #data from snp.json
+stockTradingActivity.each do |record|
+	date = record[0]
+	open = record[1]
+	high = record[2]
+	low = record[3]
+	close = record[4]
+	volume = record[5]
+
+  StockTradingActivity.create(date: date, open: open, high: high, low: low, close: close, volume: volume, company_id: 1)
+end
