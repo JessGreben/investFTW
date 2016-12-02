@@ -1,5 +1,8 @@
 <% if @investment %>
 	<p>
-		If you invest it instead of spend it, that $<%= @initInvestment %> could be worth <strong>$<%= @investment.calculateCompundInterest %></strong>!
+		If you invest it instead of spend it, that $<%= @initInvestment %> could be worth <strong>$<%= @investment.calculateCompundInterest %></strong>! <sup>*</sup>
 	</p> 
+	<a href="/">Back</a>
+	<hr>
+	<p><sup>*</sup>assumes 30 year investement at 7% return, compounded monthly</p>
 <% end %>
