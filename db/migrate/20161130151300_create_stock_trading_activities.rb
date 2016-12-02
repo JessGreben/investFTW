@@ -7,7 +7,7 @@ class CreateStockTradingActivities < ActiveRecord::Migration[5.0]
       t.decimal :high
       t.decimal :low
       t.decimal :close
-      t.integer :volume, :limit => 18
+      t.integer :volume, :limit => 8
 
       t.timestamps
     end
