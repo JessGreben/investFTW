@@ -1,7 +1,7 @@
 <h1>Don't spend it, invest it!</h1>
 
 <%= form_tag("/investments", method: "post") do %>
-	<%= label_tag(:initInvestment, "Enter how much money you are about to blow?") %>
+	<%= label_tag(:initInvestment, "How much money are you about to blow?") %>
 	<br>
   <%= text_field_tag(:initInvestment) %>
   <br>
@@ -10,6 +10,6 @@
 <br>
 <hr>
 <h3>S&P 500 Index</h3>
-<p>GSPC: S&P 500 Index. The S&P 500, or the Standard & Poor's 500, is an American stock market index based on the market capitalizations of 500 large companies having common stock listed on the NYSE or NASDAQ</p>
+<p>The S&P 500, or the Standard & Poor's 500, is an American stock market index based on the market capitalizations of 500 large companies having common stock listed on the NYSE or NASDAQ</p>
 <p>Yesterday Closed at: <%= @yesterdayClose %></p>
 <p>Last Updated at: <%= @updatedAt %></p>
