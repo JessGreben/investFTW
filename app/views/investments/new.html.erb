@@ -13,4 +13,7 @@
 <p>The S&P 500, or the Standard & Poor's 500, is an American stock market index based on the market capitalizations of 500 large companies having common stock listed on the NYSE or NASDAQ</p>
 
 <p>Last Updated at: <%= @stock_activity.update_recent_stock_activity_data %></p>
+<p>Yesterday closed at: <%= @stock_activity.get_last_day_close %></p>
+<p>Change: <%= @stock_activity.get_last_day_change %></p>
+
 
