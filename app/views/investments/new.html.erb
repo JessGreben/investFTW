@@ -1,9 +1,9 @@
 <h1>Don't spend it, invest it!</h1>
 
 <%= form_tag("/investments", method: "post") do %>
-	<%= label_tag(:initInvestment, "How much money are you about to blow?") %>
+	<%= label_tag(:investment, "How much money are you about to blow?") %>
 	<br>
-  <%= text_field_tag(:initInvestment) %>
+  <%= text_field(:investment, :init) %>
   <br>
   <%= submit_tag("Save it instead!") %>
 <% end %>

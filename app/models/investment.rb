@@ -1,5 +1,5 @@
 class Investment < ApplicationRecord
-	attr_reader :investedValue
+	attr_reader :initInvestment
 
 	def initialize(initInvestment)
 		@initInvestment = initInvestment.to_f

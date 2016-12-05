@@ -5,9 +5,12 @@ class InvestmentsController < ApplicationController
 	end
 
 	def create
-		@initInvest = params["initInvestment"]
-		@investment = Investment.new(@initInvest)
-		@initInvestment = @initInvest
-		render
+		@investment = Investment.new(investment_params[:init])
+	end
+
+	private
+	
+	def investment_params
+		params.require(:investment).permit(:init)
 	end
 end

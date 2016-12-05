@@ -67,10 +67,7 @@ class StockTradingActivity < ApplicationRecord
 		
 		change = last_close - day_before_last_close
 
-		if change > 0
-			return "+ #{change}"
-		else
-			return	"#{change}"
-		end
+		change > 0 ? change = "+ #{change}" :  change = "#{change}"
+		return change
 	end
 end
